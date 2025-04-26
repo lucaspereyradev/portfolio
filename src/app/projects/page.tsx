@@ -1,8 +1,5 @@
-import React from 'react'
-import ProjectsView from '@/modules/Projects/view/ProjectsView'
+import ProjectsView from '@/modules/Projects/presentational/ProjectsView'
 
-const ProjectsPage = () => {
+export default function ProjectsPage() {
     return <ProjectsView />
 }
-
-export default ProjectsPage

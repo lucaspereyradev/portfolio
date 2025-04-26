@@ -1,8 +1,5 @@
-import React from 'react'
-import ContactView from '@/modules/Contact/view/ContactView'
+import ContactView from '@/modules/Contact/presentational/ContactView'
 
-const ContactPage = () => {
+export default function ContactPage() {
     return <ContactView />
 }
-
-export default ContactPage

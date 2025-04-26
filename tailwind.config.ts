@@ -32,7 +32,7 @@ const config: Config = {
                 light: '#f8f9fa',
             },
             fontFamily: {
-                sans: ['var(--font-inter)'],
+                sans: ['var(--font-onest)'],
                 mono: ['var(--font-roboto-mono)'],
             },
         },

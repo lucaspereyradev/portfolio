@@ -1,8 +1,5 @@
-import React from 'react'
-import AboutView from '@/modules/About/view/AboutView'
+import AboutView from '@/modules/About/presentational/AboutView'
 
-const AboutPage = () => {
+export default function AboutPage() {
     return <AboutView />
 }
-
-export default AboutPage
