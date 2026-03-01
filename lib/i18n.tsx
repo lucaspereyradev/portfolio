@@ -129,6 +129,7 @@ export const translations = {
       all: "All",
       live: "Live",
       github: "GitHub",
+      notDeployed: "Not deployed yet",
     },
     contact: {
       sectionLabel: "Contact",
@@ -268,6 +269,7 @@ export const translations = {
       all: "Todos",
       live: "En vivo",
       github: "GitHub",
+      notDeployed: "Sin deploy por el momento",
     },
     contact: {
       sectionLabel: "Contacto",
@@ -407,6 +409,7 @@ export const translations = {
       all: "Todos",
       live: "Ao Vivo",
       github: "GitHub",
+      notDeployed: "Sem deploy por enquanto",
     },
     contact: {
       sectionLabel: "Contato",

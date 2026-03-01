@@ -32,7 +32,7 @@ const PROJECTS = [
       "Aplicación del clima con búsqueda por ciudad, pronóstico extendido y diseño adaptativo según las condiciones meteorológicas.",
     tech: ["React", "Tailwind CSS", "OpenWeather API"],
     category: "Frontend" as Category,
-    live: "",
+    live: "https://weather-me.web.app/",
     github: "https://github.com/lucaspereyradev/WeatherMe",
   },
   {
@@ -176,10 +176,16 @@ export function Projects() {
                     {t.projects.live}
                   </a>
                 ) : (
-                  <span className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 bg-muted text-muted-foreground text-xs font-medium rounded-lg cursor-not-allowed opacity-50">
-                    <ExternalLinkIcon />
-                    {t.projects.live}
-                  </span>
+                  <div className="flex-1 relative group/tooltip">
+                    <span className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 bg-muted text-muted-foreground text-xs font-medium rounded-lg cursor-not-allowed opacity-50">
+                      <ExternalLinkIcon />
+                      {t.projects.live}
+                    </span>
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2.5 py-1.5 bg-foreground text-background text-xs font-medium rounded-lg whitespace-nowrap opacity-0 pointer-events-none group-hover/tooltip:opacity-100 transition-opacity duration-200 z-10">
+                      {t.projects.notDeployed}
+                      <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-foreground" />
+                    </div>
+                  </div>
                 )}
                 <a
                   href={project.github}

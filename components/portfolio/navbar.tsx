@@ -149,9 +149,12 @@ export function Navbar() {
         {/* Logo */}
         <a
           href="#home"
-          className="text-sm font-semibold tracking-tight text-foreground hover:text-emerald transition-colors duration-200 shrink-0"
+          className="font-semibold tracking-tight text-foreground hover:text-emerald transition-colors duration-200 shrink-0 flex items-baseline gap-0.5"
         >
-          Lucas Pereyra
+          <span className="text-lg">&lt;</span>
+          <span className="text-lg">lukedev</span>
+          <span className="text-lg text-emerald">/</span>
+          <span className="text-lg">&gt;</span>
         </a>
 
         {/* Center links */}

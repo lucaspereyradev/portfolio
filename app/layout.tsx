@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Lucas Pereyra — Full Stack Developer",
   description:
     "Portafolio de Lucas Pereyra, Desarrollador Full Stack especializado en JavaScript, React, TypeScript y Node.js.",
-  keywords: ["Lucas Pereyra", "Full Stack Developer", "React", "TypeScript", "Next.js", "Node.js", "Portfolio"],
+  keywords: ["Lucas Pereyra", "Full Stack Developer", "Desarrollador Full Stack", "Desarrollador Frontend", "Desarrollador Backend", "React", "TypeScript", "Next.js", "Node.js", "Portfolio"],
   authors: [{ name: "Lucas Pereyra", url: "https://github.com/lucaspereyradev" }],
   openGraph: {
     title: "Lucas Pereyra — Full Stack Developer",

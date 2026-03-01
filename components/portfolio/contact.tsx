@@ -184,16 +184,7 @@ export function Contact() {
               <GitHubIcon />
             </a>
             <a
-              href="https://instagram.com/lukehz_/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="text-muted-foreground hover:text-emerald transition-colors duration-200"
-            >
-              <InstagramIcon />
-            </a>
-            <a
-              href="mailto:lucaspereyra470@gmail.com"
+              href="mailto:lucas.pereyra.tech@gmail.com"
               aria-label="Email"
               className="text-muted-foreground hover:text-emerald transition-colors duration-200"
             >
@@ -224,7 +215,12 @@ export function Footer() {
         <div className="h-full w-24 bg-emerald rounded-full" />
       </div>
       <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm font-medium text-foreground">Lucas Pereyra</p>
+        <p className="text-lg font-medium text-foreground flex items-baseline gap-0.5">
+          <span>&lt;</span>
+          <span>lukedev</span>
+          <span className="text-emerald">/</span>
+          <span>&gt;</span>
+        </p>
         <p className="text-xs text-muted-foreground">
           &copy; {year} — {t.footer.built}
         </p>
