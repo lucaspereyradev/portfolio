@@ -4,6 +4,7 @@ import { useState } from "react"
 import { cn } from "@/lib/utils"
 import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 import { useI18n } from "@/lib/i18n"
+import { sendContactEmail } from "@/app/actions/send-email"
 
 function LinkedInIcon() {
   return (
@@ -37,21 +38,30 @@ function EmailIcon() {
   )
 }
 
-type FormState = "idle" | "submitting" | "success"
+type FormState = "idle" | "submitting" | "success" | "error"
 
 export function Contact() {
   const { ref, isVisible } = useScrollReveal()
   const { t } = useI18n()
   const c = t.contact
   const [formState, setFormState] = useState<FormState>("idle")
+  const [errorMsg, setErrorMsg] = useState<string | null>(null)
   const [form, setForm] = useState({ name: "", email: "", message: "" })
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setFormState("submitting")
-    await new Promise((r) => setTimeout(r, 1200))
-    setFormState("success")
-    setForm({ name: "", email: "", message: "" })
+    setErrorMsg(null)
+
+    const result = await sendContactEmail(form)
+
+    if (result.success) {
+      setFormState("success")
+      setForm({ name: "", email: "", message: "" })
+    } else {
+      setFormState("error")
+      setErrorMsg(result.error ?? "Something went wrong.")
+    }
   }
 
   return (
@@ -138,6 +148,15 @@ export function Contact() {
                   className="w-full px-4 py-3 text-sm bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-emerald/30 focus:border-emerald transition-colors duration-200 resize-none"
                 />
               </div>
+              {formState === "error" && errorMsg && (
+                <div className="flex items-center gap-2 px-4 py-3 bg-red-50 border border-red-200 rounded-lg text-xs text-red-600 font-medium">
+                  <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  {errorMsg}
+                </div>
+              )}
+
               <button
                 type="submit"
                 disabled={formState === "submitting"}
