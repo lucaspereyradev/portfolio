@@ -67,7 +67,7 @@ export const translations = {
           icon: "book",
           title: "Reading & Learning",
           description:
-            "I'm always learning something new — whether it's a tech concept, a book on psychology, or a deep dive into a topic I'm curious about.",
+            "I'm always learning something new — whether it's a tech concept, documentation, or a deep dive into a topic I'm curious about.",
         },
         {
           icon: "gamepad",
@@ -207,7 +207,7 @@ export const translations = {
           icon: "book",
           title: "Lectura y Aprendizaje",
           description:
-            "Siempre estoy aprendiendo algo nuevo — ya sea un concepto de tecnología, un libro de psicología o un tema que me genera curiosidad.",
+            "Siempre estoy aprendiendo algo nuevo — ya sea un concepto de tecnología, documentación o un tema que me genera curiosidad.",
         },
         {
           icon: "gamepad",
@@ -347,7 +347,7 @@ export const translations = {
           icon: "book",
           title: "Leitura e Aprendizado",
           description:
-            "Estou sempre aprendendo algo novo — seja um conceito de tecnologia, um livro de psicologia ou um tema que me desperta curiosidade.",
+            "Estou sempre aprendendo algo novo — seja um conceito de tecnologia, documentação ou um tema que me desperta curiosidade.",
         },
         {
           icon: "gamepad",

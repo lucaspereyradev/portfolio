@@ -9,13 +9,23 @@ type Category = "All" | "Frontend" | "Fullstack"
 
 const PROJECTS = [
   {
+    name: "WeatherMe",
+    description:
+      "Aplicación del clima con búsqueda por ciudad, pronóstico extendido y diseño adaptativo según las condiciones meteorológicas.",
+    tech: ["React", "Tailwind CSS", "OpenWeather API"],
+    category: "Frontend" as Category,
+    live: "https://weather-me.web.app/",
+    github: "https://github.com/lucaspereyradev/WeatherMe",
+  },
+  {
     name: "Portfolio",
     description:
-      "Mi portafolio personal construido con React y TailwindCSS. Animaciones con Framer Motion, soporte multiidioma (ES/EN/PT) y diseño responsivo.",
+      "Mi portafolio personal construido con Next.js y TypeScript. Tailwind CSS, soporte multiidioma (ES/EN/PT), formulario de contacto con Resend y diseño responsivo.",
     tech: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
     category: "Frontend" as Category,
-    live: "https://lucaspereyradev.github.io/portfolio/",
+    live: "https://lucaspereyradev.vercel.app/",
     github: "https://github.com/lucaspereyradev/portfolio",
+    hideGithub: true,
   },
   {
     name: "DevCoin",
@@ -25,15 +35,6 @@ const PROJECTS = [
     category: "Fullstack" as Category,
     live: "",
     github: "https://github.com/lucaspereyradev/DevCoin",
-  },
-  {
-    name: "WeatherMe",
-    description:
-      "Aplicación del clima con búsqueda por ciudad, pronóstico extendido y diseño adaptativo según las condiciones meteorológicas.",
-    tech: ["React", "Tailwind CSS", "OpenWeather API"],
-    category: "Frontend" as Category,
-    live: "https://weather-me.web.app/",
-    github: "https://github.com/lucaspereyradev/WeatherMe",
   },
   {
     name: "TuTienda E-commerce",
@@ -187,15 +188,17 @@ export function Projects() {
                     </div>
                   </div>
                 )}
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 border border-border text-foreground text-xs font-medium rounded-lg hover:border-emerald/40 hover:text-emerald transition-colors duration-200"
-                >
-                  <GitHubIcon />
-                  {t.projects.github}
-                </a>
+                {!("hideGithub" in project && project.hideGithub) && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 border border-border text-foreground text-xs font-medium rounded-lg hover:border-emerald/40 hover:text-emerald transition-colors duration-200"
+                  >
+                    <GitHubIcon />
+                    {t.projects.github}
+                  </a>
+                )}
               </div>
             </article>
           ))}
