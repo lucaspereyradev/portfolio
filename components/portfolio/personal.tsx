@@ -1,5 +1,6 @@
 "use client"
 
+import { Gamepad2 } from "lucide-react"
 import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 import { useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
@@ -74,6 +75,7 @@ const ICON_MAP: Record<string, React.ReactNode> = {
   camera: <CameraIcon />,
   book: <BookIcon />,
   music: <MusicIcon />,
+  gamepad: <Gamepad2 className="w-5 h-5" strokeWidth={1.75} />,
   rocket: <RocketIcon />,
   write: <WriteIcon />,
   globe: <GlobeIcon />,

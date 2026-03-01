@@ -70,10 +70,10 @@ export const translations = {
             "I'm always learning something new — whether it's a tech concept, a book on psychology, or a deep dive into a topic I'm curious about.",
         },
         {
-          icon: "mountain",
-          title: "Sports & Outdoor",
+          icon: "gamepad",
+          title: "Gaming",
           description:
-            "I enjoy outdoor activities and sports. Moving around helps me stay focused and energized for work.",
+            "I love video games — from strategy and RPGs to competitive titles. Gaming helps me unwind and keeps my problem-solving skills sharp.",
         },
       ],
       achievements: [
@@ -84,7 +84,7 @@ export const translations = {
             "2+ years leading frontend development of healthcare solutions for patients and doctors in Argentina and companies in Mexico.",
         },
         {
-          year: "2024",
+          year: "2025",
           title: "Telemedicine Platform",
           description:
             "Developed and shipped key features for a digital clinic for telemedicine, improving load times and increasing user engagement through code optimization.",
@@ -210,10 +210,10 @@ export const translations = {
             "Siempre estoy aprendiendo algo nuevo — ya sea un concepto de tecnología, un libro de psicología o un tema que me genera curiosidad.",
         },
         {
-          icon: "mountain",
-          title: "Deporte y Actividades al Aire Libre",
+          icon: "gamepad",
+          title: "Gaming",
           description:
-            "Disfruto las actividades al aire libre y los deportes. Moverme me ayuda a mantenerme enfocado y con energía para el trabajo.",
+            "Me encantan los videojuegos — desde estrategia y RPGs hasta títulos competitivos. El gaming me ayuda a desconectar y mantiene mis habilidades de resolución de problemas activas.",
         },
       ],
       achievements: [
@@ -224,7 +224,7 @@ export const translations = {
             "2+ años liderando el desarrollo frontend de soluciones de salud para pacientes y médicos en Argentina y empresas de México.",
         },
         {
-          year: "2024",
+          year: "2025",
           title: "Plataforma de Telemedicina",
           description:
             "Desarrollé y entregué features clave para un consultorio digital de telemedicina, mejorando tiempos de carga y aumentando el engagement de usuarios mediante optimización de código.",
@@ -350,10 +350,10 @@ export const translations = {
             "Estou sempre aprendendo algo novo — seja um conceito de tecnologia, um livro de psicologia ou um tema que me desperta curiosidade.",
         },
         {
-          icon: "mountain",
-          title: "Esporte e Atividades ao Ar Livre",
+          icon: "gamepad",
+          title: "Gaming",
           description:
-            "Gosto de atividades ao ar livre e esportes. Me movimentar me ajuda a manter o foco e a energia para o trabalho.",
+            "Adoro videogames — de estratégia e RPGs a títulos competitivos. O gaming me ajuda a relaxar e mantém minhas habilidades de resolução de problemas afiadas.",
         },
       ],
       achievements: [
@@ -364,7 +364,7 @@ export const translations = {
             "2+ anos liderando o desenvolvimento frontend de soluções de saúde para pacientes e médicos na Argentina e empresas no México.",
         },
         {
-          year: "2024",
+          year: "2025",
           title: "Plataforma de Telemedicina",
           description:
             "Desenvolvi e entreguei features-chave para um consultório digital de telemedicina, melhorando tempos de carregamento e aumentando o engajamento dos usuários por meio de otimização de código.",

@@ -73,7 +73,7 @@ export function ContactEmail({ name, email, message }: ContactEmailProps) {
           <Section style={footer}>
             <Text style={footerText}>
               Este mensaje fue enviado desde el formulario de contacto de{" "}
-              <span style={footerBrand}>lucaspereyradev.github.io/portfolio</span>
+              <span style={footerBrand}>lucaspereyradev.vercel.app</span>
             </Text>
           </Section>
 
