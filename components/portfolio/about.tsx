@@ -6,34 +6,100 @@ import { cn } from "@/lib/utils"
 
 const EXPERIENCE = [
   {
-    role: "Desarrollador Frontend Jr.",
-    company: "ÜMA Salud IA",
-    period: "Jun. 2023 — Actualidad",
-    bullets: [
-      "Desarrollo y mantenimiento de interfaces web para una plataforma de salud con IA.",
-      "Implementación de nuevas funcionalidades y mejoras de UX en producción.",
-      "Colaboración en equipo con metodologías ágiles (SCRUM).",
-    ],
+    role: {
+      es: "Desarrollador Frontend",
+      en: "Frontend Developer",
+      pt: "Desenvolvedor Frontend",
+    },
+    company: "ÜMA Health A.I",
+    companyUrl: "https://www.linkedin.com/company/umahealthai/",
+    period: {
+      es: "Jun. 2023 — Presente · CABA, Argentina",
+      en: "Jun. 2023 — Present · CABA, Argentina",
+      pt: "Jun. 2023 — Presente · CABA, Argentina",
+    },
+    bullets: {
+      es: [
+        "Liderar el desarrollo frontend de varias soluciones de salud que benefician a pacientes y médicos en Argentina y empresas de México.",
+        "Colaborar estrechamente con diseñadores UX/UI y stakeholders para garantizar que la aplicación cumpla las expectativas de los usuarios.",
+        "Desarrollar e implementar scripts de pruebas automatizadas para optimizar los procesos de testing.",
+        "Implementar sistemas de métricas y análisis de datos (PostHog) para monitorear rendimiento y experiencia del usuario.",
+        "Reducción de costos en Google Cloud Run mediante optimización de recursos en arquitectura de microservicios.",
+      ],
+      en: [
+        "Lead the frontend development of multiple healthcare solutions benefiting patients and doctors in Argentina and companies in Mexico.",
+        "Work closely with UX/UI designers and key stakeholders to ensure the application meets user needs.",
+        "Develop and implement automated testing scripts to optimize testing processes.",
+        "Implement metrics and data analytics systems (PostHog) to monitor performance and user experience.",
+        "Reduced costs in Google Cloud Run by optimizing resources within the microservices architecture.",
+      ],
+      pt: [
+        "Liderar o desenvolvimento frontend de várias soluções de saúde que beneficiam pacientes e médicos na Argentina e empresas no México.",
+        "Colaborar com designers UX/UI e stakeholders para garantir que a aplicação atenda às necessidades dos usuários.",
+        "Desenvolver e implementar scripts de testes automatizados para otimizar os processos de testing.",
+        "Implementar sistemas de métricas e análise de dados (PostHog) para monitorar desempenho e experiência do usuário.",
+        "Redução de custos no Google Cloud Run por meio de otimização de recursos na arquitetura de microsserviços.",
+      ],
+    },
   },
 ]
 
 const STUDIES = [
   {
-    institution: "Dev Place",
-    degree: "Bootcamp Full Stack en JavaScript",
-    year: "Oct. 2022 — Feb. 2023",
+    institution: "Constana (Dev Place)",
+    degree: {
+      es: "Desarrollador Full Stack JavaScript",
+      en: "Full Stack JavaScript Developer",
+      pt: "Desenvolvedor Full Stack JavaScript",
+    },
+    year: {
+      es: "Sep. 2022 — Feb. 2023 · Buenos Aires",
+      en: "Sep. 2022 — Feb. 2023 · Buenos Aires",
+      pt: "Set. 2022 — Fev. 2023 · Buenos Aires",
+    },
   },
   {
-    institution: "EEST n°5 'Amancio Williams'",
-    degree: "Técnico Informático",
-    year: "2015 — 2022",
+    institution: 'E.E.S.T. N°5 "Amancio Williams"',
+    degree: {
+      es: "Técnico en Informática",
+      en: "Computer Technician",
+      pt: "Técnico em Informática",
+    },
+    year: {
+      es: "Mar. 2015 — Feb. 2022 · Mar del Plata",
+      en: "Mar. 2015 — Feb. 2022 · Mar del Plata",
+      pt: "Mar. 2015 — Fev. 2022 · Mar del Plata",
+    },
   },
 ]
 
 const TECH_STACK = {
-  Frontend: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML", "CSS", "JavaScript"],
-  Backend: ["Node.js", "Express", "Python", "Flask", "MySQL", "MongoDB", "Sequelize"],
-  Tools: ["Git", "GitHub", "Postman", "jQuery", "Bootstrap", "SASS", "Material UI"],
+  "Languages & Frameworks": [
+    "JavaScript",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Nest.js",
+    "Node.js",
+    "Python",
+  ],
+  "Cloud & Tools": [
+    "Firebase",
+    "Google Cloud Platform",
+    "PostHog",
+    "Git",
+    "GitHub",
+    "Scrum / Agile",
+  ],
+  "Styling & Other": [
+    "Tailwind CSS",
+    "HTML",
+    "CSS",
+    "Redux",
+    "GraphQL",
+    "REST APIs",
+    "Automated Testing",
+  ],
 }
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -49,7 +115,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 export function About() {
   const { ref, isVisible } = useScrollReveal()
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
 
   return (
     <section id="about" className="bg-surface py-24 md:py-32">
@@ -87,15 +153,24 @@ export function About() {
                   <div className="absolute left-0 top-2 w-2 h-2 rounded-full bg-border group-hover:bg-emerald transition-colors duration-200 -translate-x-[3px] hidden md:block" />
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-3">
                     <div>
-                      <h3 className="text-base font-semibold text-foreground">{item.role}</h3>
-                      <span className="text-sm font-medium text-emerald">{item.company}</span>
+                      <h3 className="text-base font-semibold text-foreground">
+                        {item.role[locale]}
+                      </h3>
+                      <a
+                        href={item.companyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-medium text-emerald hover:underline"
+                      >
+                        {item.company}
+                      </a>
                     </div>
                     <span className="text-xs text-muted-foreground font-medium shrink-0 mt-0.5">
-                      {item.period}
+                      {item.period[locale]}
                     </span>
                   </div>
                   <ul className="space-y-1">
-                    {item.bullets.map((b, j) => (
+                    {item.bullets[locale].map((b, j) => (
                       <li key={j} className="flex gap-2 text-sm text-muted-foreground leading-relaxed">
                         <span className="text-emerald mt-1 shrink-0">·</span>
                         {b}
@@ -116,9 +191,11 @@ export function About() {
                   key={i}
                   className="bg-card border border-border rounded-xl p-5 hover:border-emerald/40 transition-colors duration-200"
                 >
-                  <p className="text-xs text-muted-foreground font-medium mb-1">{item.year}</p>
+                  <p className="text-xs text-muted-foreground font-medium mb-1">
+                    {item.year[locale]}
+                  </p>
                   <h3 className="text-sm font-semibold text-foreground mb-1 text-balance leading-snug">
-                    {item.degree}
+                    {item.degree[locale]}
                   </h3>
                   <p className="text-xs text-muted-foreground">{item.institution}</p>
                 </div>

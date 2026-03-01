@@ -32,7 +32,7 @@ export function Hero() {
   const CV_HREFS: Record<string, string> = {
     es: "/cv/cv-es-lucaspereyra.pdf",
     en: "/cv/cv-en-lucaspereyra.pdf",
-    pt: "/cv/cv-br-lucaspereyra.pdf",
+    pt: "/cv/cv-es-lucaspereyra.pdf",
   }
 
   const cvHref = CV_HREFS[locale] ?? "/cv/cv-es-lucaspereyra.pdf"

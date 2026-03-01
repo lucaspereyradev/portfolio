@@ -25,9 +25,9 @@ export const translations = {
     hero: {
       available: "Available for opportunities",
       greeting: "Hi, I'm",
-      tagline: "Full Stack Developer building fast, modern web experiences.",
+      tagline: "Full Stack Developer building innovative solutions that prioritize user experience.",
       description:
-        "I craft pixel-perfect interfaces and scalable backends with React, TypeScript, Node.js and more. Passionate about clean code, performance and turning ideas into real products.",
+        "I turn ideas into products that people actually enjoy using. Currently working in health tech, crafting interfaces with React, TypeScript and Next.js.",
       viewProjects: "View Projects",
       contact: "Contact",
       scroll: "Scroll",
@@ -37,7 +37,7 @@ export const translations = {
       sectionLabel: "Experience & Skills",
       title: "About Me",
       subtitle:
-        "I'm a Full Stack Developer focused on JavaScript and its ecosystem. I care about clean code, good UX and building things that actually work.",
+        "+3 years of experience specializing in building innovative technology solutions that prioritize user experience. Analytical thinker with a Lean mindset and a strong ability to adapt quickly, shaped by work in fast-growing startup environments.",
       experience: "Experience",
       studies: "Studies",
       techStack: "Tech Stack",
@@ -78,36 +78,36 @@ export const translations = {
       ],
       achievements: [
         {
-          year: "2023",
-          title: "Junior Frontend Developer",
+          year: "2025",
+          title: "Frontend Developer at ÜMA Health A.I",
           description:
-            "Joined ÜMA Salud IA as a Junior Frontend Developer, working on production-level healthcare web applications.",
+            "2+ years leading frontend development of healthcare solutions for patients and doctors in Argentina and companies in Mexico.",
+        },
+        {
+          year: "2024",
+          title: "Telemedicine Platform",
+          description:
+            "Developed and shipped key features for a digital clinic for telemedicine, improving load times and increasing user engagement through code optimization.",
         },
         {
           year: "2023",
           title: "Full Stack Bootcamp Graduate",
           description:
-            "Completed the intensive Full Stack JavaScript Bootcamp at Dev Place, gaining hands-on experience with the MERN stack.",
+            "Completed the Full Stack JavaScript Bootcamp at Constana (Dev Place), gaining hands-on experience building real-world applications.",
         },
         {
           year: "2022",
-          title: "Technician Degree",
+          title: "Computer Technician Degree",
           description:
-            "Earned the IT Technician degree from EEST n°5 'Amancio Williams' after 7 years of technical education.",
-        },
-        {
-          year: "2022",
-          title: "First Full Stack Project",
-          description:
-            "Built and deployed my first complete full stack application — CryptoWallet — using React, Node.js and MySQL.",
+            'Earned the Computer Technician degree from E.E.S.T. N°5 "Amancio Williams" after 7 years of technical education in Mar del Plata.',
         },
       ],
       goals: [
         {
           icon: "rocket",
-          title: "Senior Developer",
+          title: "Grow to Senior",
           description:
-            "I aim to grow into a Senior Full Stack role, leading projects and contributing to architectural decisions that make a real impact.",
+            "I aim to grow into a Senior Full Stack role, leading technical decisions and building products that make a real difference.",
         },
         {
           icon: "write",
@@ -119,7 +119,7 @@ export const translations = {
           icon: "globe",
           title: "Work Internationally",
           description:
-            "I'd love to collaborate with international teams and eventually work remotely from different parts of the world.",
+            "I speak Spanish (native), English (B1) and Portuguese (B2). I'd love to collaborate with international teams and work remotely.",
         },
       ],
     },
@@ -165,9 +165,9 @@ export const translations = {
     hero: {
       available: "Disponible para oportunidades",
       greeting: "Hola, soy",
-      tagline: "Desarrollador Full Stack construyendo experiencias web rápidas y modernas.",
+      tagline: "Desarrollador Full Stack construyendo soluciones innovadoras que priorizan la experiencia del usuario.",
       description:
-        "Creo interfaces pixel-perfect y backends escalables con React, TypeScript, Node.js y más. Apasionado por el código limpio, el rendimiento y transformar ideas en productos reales.",
+        "Convierto ideas en productos que la gente disfruta usar. Actualmente trabajando en health tech, construyendo interfaces con React, TypeScript y Next.js.",
       viewProjects: "Ver Proyectos",
       contact: "Contacto",
       scroll: "Desplazar",
@@ -177,7 +177,7 @@ export const translations = {
       sectionLabel: "Experiencia y habilidades",
       title: "Sobre mí",
       subtitle:
-        "Soy un Desarrollador Full Stack enfocado en JavaScript y su ecosistema. Me importa el código limpio, una buena UX y construir cosas que realmente funcionen.",
+        "+3 años de experiencia especializado en construir soluciones tecnológicas innovadoras que priorizan la experiencia del usuario. Pensamiento analítico con mentalidad Lean y capacidad de adaptación rápida, forjados en entornos de startups en fase de crecimiento acelerado.",
       experience: "Experiencia",
       studies: "Formación",
       techStack: "Stack Tecnológico",
@@ -218,48 +218,48 @@ export const translations = {
       ],
       achievements: [
         {
-          year: "2023",
-          title: "Desarrollador Frontend Jr.",
+          year: "2025",
+          title: "Desarrollador Frontend en ÜMA Health A.I",
           description:
-            "Me sumé a ÜMA Salud IA como Desarrollador Frontend Jr., trabajando en aplicaciones web de salud a nivel productivo.",
+            "2+ años liderando el desarrollo frontend de soluciones de salud para pacientes y médicos en Argentina y empresas de México.",
+        },
+        {
+          year: "2024",
+          title: "Plataforma de Telemedicina",
+          description:
+            "Desarrollé y entregué features clave para un consultorio digital de telemedicina, mejorando tiempos de carga y aumentando el engagement de usuarios mediante optimización de código.",
         },
         {
           year: "2023",
           title: "Egresado del Bootcamp Full Stack",
           description:
-            "Completé el intensivo Bootcamp de JavaScript Full Stack en Dev Place, adquiriendo experiencia práctica con el stack MERN.",
+            "Completé el Bootcamp de JavaScript Full Stack en Constana (Dev Place), construyendo aplicaciones reales con tecnologías modernas.",
         },
         {
           year: "2022",
-          title: "Título de Técnico",
+          title: "Título de Técnico en Informática",
           description:
-            "Obtuve el título de Técnico Informático en la EEST n°5 'Amancio Williams' tras 7 años de formación técnica.",
-        },
-        {
-          year: "2022",
-          title: "Primer Proyecto Full Stack",
-          description:
-            "Construí y desplegué mi primera aplicación full stack completa — CryptoWallet — usando React, Node.js y MySQL.",
+            'Obtuve el título de Técnico en Informática en la E.E.S.T. N°5 "Amancio Williams" tras 7 años de formación técnica en Mar del Plata.',
         },
       ],
       goals: [
         {
           icon: "rocket",
-          title: "Desarrollador Senior",
+          title: "Crecer a Senior",
           description:
-            "Mi objetivo es crecer hacia un rol de Full Stack Senior, liderando proyectos y participando en decisiones de arquitectura que tengan impacto real.",
+            "Mi objetivo es crecer hacia un rol de Full Stack Senior, liderando decisiones técnicas y construyendo productos que generen un impacto real.",
         },
         {
           icon: "write",
           title: "Compartir Conocimiento",
           description:
-            "Quiero empezar a escribir artículos técnicos y compartir lo que aprendo — ayudando a otros desarrolladores que están en el camino que yo recorrí.",
+            "Quiero empezar a escribir artículos técnicos y compartir lo que aprendo — ayudando a otros desarrolladores que están en el mismo camino.",
         },
         {
           icon: "globe",
           title: "Trabajar Internacionalmente",
           description:
-            "Me gustaría colaborar con equipos internacionales y eventualmente trabajar de forma remota desde distintas partes del mundo.",
+            "Hablo Español (nativo), Inglés (B1) y Portugués (B2). Me gustaría colaborar con equipos internacionales y trabajar de forma remota.",
         },
       ],
     },
@@ -305,9 +305,9 @@ export const translations = {
     hero: {
       available: "Disponível para oportunidades",
       greeting: "Olá, sou",
-      tagline: "Desenvolvedor Full Stack criando experiências web rápidas e modernas.",
+      tagline: "Desenvolvedor Full Stack construindo soluções inovadoras que priorizam a experiência do usuário.",
       description:
-        "Crio interfaces pixel-perfect e backends escaláveis com React, TypeScript, Node.js e muito mais. Apaixonado por código limpo, performance e transformar ideias em produtos reais.",
+        "Transformo ideias em produtos que as pessoas realmente gostam de usar. Atualmente trabalhando em health tech, construindo interfaces com React, TypeScript e Next.js.",
       viewProjects: "Ver Projetos",
       contact: "Contato",
       scroll: "Rolar",
@@ -317,7 +317,7 @@ export const translations = {
       sectionLabel: "Experiência e habilidades",
       title: "Sobre mim",
       subtitle:
-        "Sou um Desenvolvedor Full Stack focado em JavaScript e seu ecossistema. Me importo com código limpo, boa UX e construir coisas que realmente funcionam.",
+        "+3 anos de experiência especializando em construir soluções tecnológicas inovadoras que priorizam a experiência do usuário. Pensamento analítico com mentalidade Lean e forte capacidade de adaptação, moldados por ambientes de startups em crescimento acelerado.",
       experience: "Experiência",
       studies: "Formação",
       techStack: "Stack Tecnológico",
@@ -358,48 +358,48 @@ export const translations = {
       ],
       achievements: [
         {
-          year: "2023",
-          title: "Desenvolvedor Frontend Jr.",
+          year: "2025",
+          title: "Desenvolvedor Frontend na ÜMA Health A.I",
           description:
-            "Entrei na ÜMA Salud IA como Desenvolvedor Frontend Jr., trabalhando em aplicações web de saúde em nível produtivo.",
+            "2+ anos liderando o desenvolvimento frontend de soluções de saúde para pacientes e médicos na Argentina e empresas no México.",
+        },
+        {
+          year: "2024",
+          title: "Plataforma de Telemedicina",
+          description:
+            "Desenvolvi e entreguei features-chave para um consultório digital de telemedicina, melhorando tempos de carregamento e aumentando o engajamento dos usuários por meio de otimização de código.",
         },
         {
           year: "2023",
           title: "Formado no Bootcamp Full Stack",
           description:
-            "Concluí o intensivo Bootcamp de JavaScript Full Stack na Dev Place, adquirindo experiência prática com a stack MERN.",
+            "Concluí o Bootcamp de JavaScript Full Stack na Constana (Dev Place), construindo aplicações reais com tecnologias modernas.",
         },
         {
           year: "2022",
-          title: "Diploma de Técnico",
+          title: "Diploma de Técnico em Informática",
           description:
-            "Obtive o diploma de Técnico em Informática na EEST n°5 'Amancio Williams' após 7 anos de formação técnica.",
-        },
-        {
-          year: "2022",
-          title: "Primeiro Projeto Full Stack",
-          description:
-            "Construí e publiquei minha primeira aplicação full stack completa — CryptoWallet — usando React, Node.js e MySQL.",
+            'Obtive o diploma de Técnico em Informática na E.E.S.T. N°5 "Amancio Williams" após 7 anos de formação técnica em Mar del Plata.',
         },
       ],
       goals: [
         {
           icon: "rocket",
-          title: "Desenvolvedor Sênior",
+          title: "Crescer a Sênior",
           description:
-            "Meu objetivo é crescer para um cargo de Full Stack Sênior, liderando projetos e participando de decisões arquiteturais com impacto real.",
+            "Meu objetivo é crescer para um cargo de Full Stack Sênior, liderando decisões técnicas e construindo produtos com impacto real.",
         },
         {
           icon: "write",
           title: "Compartilhar Conhecimento",
           description:
-            "Quero começar a escrever artigos técnicos e compartilhar o que aprendo — ajudando outros desenvolvedores que estão no mesmo caminho que eu percorri.",
+            "Quero começar a escrever artigos técnicos e compartilhar o que aprendo — ajudando outros desenvolvedores no mesmo caminho.",
         },
         {
           icon: "globe",
           title: "Trabalhar Internacionalmente",
           description:
-            "Gostaria de colaborar com equipes internacionais e, eventualmente, trabalhar remotamente de diferentes partes do mundo.",
+            "Falo Espanhol (nativo), Inglês (B1) e Português (B2). Gostaria de colaborar com equipes internacionais e trabalhar remotamente.",
         },
       ],
     },
